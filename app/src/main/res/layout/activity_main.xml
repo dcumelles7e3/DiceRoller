@@ -22,20 +22,21 @@
         android:id="@+id/roll_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
         android:layout_gravity="center"
-        android:text="@string/roll_button"
+        android:layout_marginHorizontal="30dp"
         android:layout_weight="0.05"
+        android:text="@string/roll_button"
         android:textSize="24sp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/clear_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="100dp"
         android:layout_gravity="center"
-        android:text="@string/clear"
+        android:layout_marginHorizontal="100dp"
         android:layout_weight="0.01"
+        android:text="@string/clear"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -45,19 +46,18 @@
         android:layout_weight="0.6"
         android:orientation="horizontal">
 
-        <TextView
+        <ImageView
             android:id="@+id/dau1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/empty_dice"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:src="@drawable/empty_dice" />
 
-        <TextView
+        <ImageView
             android:id="@+id/dau2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/empty_dice" />
+            android:src="@drawable/empty_dice" />
     </LinearLayout>
-
 </LinearLayout>
