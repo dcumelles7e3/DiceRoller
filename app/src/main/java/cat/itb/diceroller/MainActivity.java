@@ -17,7 +17,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private TextView dau1, dau2;
     private Button rollButton;
+    private Button clearbutton;
     private boolean rollable = false;
+
 
 
     @Override
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         dau1 = findViewById(R.id.dau1);
         dau2 = findViewById(R.id.dau2);
         rollButton = findViewById(R.id.roll_button);
+        clearbutton = findViewById(R.id.clear_button);
 
 
         rollButton.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +44,16 @@ public class MainActivity extends AppCompatActivity {
                 roll(dau1);
                 roll(dau2);
 
+            }
+        });
+
+        clearbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rollable=false;
+                rollButton.setText(R.string.roll_button);
+                dau1.setBackgroundResource(R.drawable.empty_dice);
+                dau2.setBackgroundResource(R.drawable.empty_dice);
             }
         });
 

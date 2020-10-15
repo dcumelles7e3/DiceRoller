@@ -3,4 +3,5 @@
     <string name="title_text">ITB Gambling</string>
     <string name="roll_button">Roll the Dice</string>
     <string name="dices_rolled">Dices Rolled!</string>
+    <string name="clear">Clear</string>
 </resources>
